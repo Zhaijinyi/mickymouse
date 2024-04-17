@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// 连接到Redis数据库
-	client := redis.NewClient(&redis.Options{
+	client := redis.NewClient(&redis.Options{//创建一个新的Redis客户端
 		Addr:     "localhost:6379",
 		Password: "",
 		DB:       0,
